@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/vaccine/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccine/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/vaccine/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccine/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,14 @@
       <option name="presentableId" value="Default" />
       <updated>1715163374193</updated>
     </task>
+    <task id="LOCAL-00001" summary="modeling">
+      <created>1715166262943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715166262943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +83,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modeling" />
+    <option name="LAST_COMMIT_MESSAGE" value="modeling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
