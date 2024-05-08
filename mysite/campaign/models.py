@@ -15,4 +15,16 @@ class Campaign(models.Model):
     agents = models.ManyToManyField(User, blank=True)
 
     def __str__(self):
-        return  str(self.vaccine.name).upper() + " | " + str(self.center.name).upper()
+        return str(self.vaccine.name).upper() + " | " + str(self.center.name).upper()
+
+
+class Slot(models.Model):
+    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
+    date = models.DateField(null=True, blank=True)
+    startTime = models.TimeField(null=True, blank=True)
+    endTime = models.TimeField(null=True, blank=True)
+    maxCapacity = models.IntegerField(default=0, null=True, blank=True)
+    reserved = models.IntegerField(default=0, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.date) + " | " + str(self.startTime) + " to " + str(self.endTime)
