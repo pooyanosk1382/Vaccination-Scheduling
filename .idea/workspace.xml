@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
-      <change afterPath="$PROJECT_DIR$/mysite/center/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center/center-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/center/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/storage/storage-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/storage/storage-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/storage/storage-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/templates/center/center-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/templates/center/center-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,6 +55,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studing\programming\Django\DjangoProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\studing\programming\Django\DjangoProject\mysite\vaccine\templates\vaccine" />
     </key>
   </component>
   <component name="RunManager">
