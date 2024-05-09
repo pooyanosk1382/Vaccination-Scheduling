@@ -5,13 +5,19 @@ from center.forms import CenterForm, StorageForm
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from django.views import generic
+from django.core.paginator import Paginator
+
 
 def center_list(request):
-    objects = Center.objects.all()
+    objects = Center.objects.all().order_by("name")
+    paginator = Paginator(objects, 2)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
     context = {
-        "center": objects,
+        "page_obj": page_obj,
     }
     return render(request, "center/center-list.html", context)
+
 
 def center_detail(request, id):
     object = Center.objects.get(id=id)
@@ -19,6 +25,7 @@ def center_detail(request, id):
         "center": object,
     }
     return render(request, "center/center-detail.html", context)
+
 
 def create_center(request):
     if request.method == "POST":
@@ -32,6 +39,7 @@ def create_center(request):
         "form": CenterForm()
     }
     return render(request, "center/create-center.html", context)
+
 
 def update_center(request, id):
     try:
@@ -50,6 +58,7 @@ def update_center(request, id):
         "form": CenterForm(instance = center)
     }
     return render(request, "center/update-center.html", context)
+
 
 def delete_center(request, id):
     try:
@@ -70,6 +79,8 @@ def delete_center(request, id):
 class StorageList(generic.ListView):
     queryset = Storage.objects.all()
     template_name = "storage/storage-list.html"
+    ordering = ["id"]
+    paginate_by = 2
 
     def get_queryset(self):
         return super().get_queryset().filter(center_id = self.kwargs["center_id"])
@@ -79,6 +90,7 @@ class StorageList(generic.ListView):
         context["center_id"] = self.kwargs["center_id"]
         return context
 
+
 class StorageDetail(generic.DetailView):
     model = Storage
     template_name = "storage/storage-detail.html"
@@ -87,6 +99,7 @@ class StorageDetail(generic.DetailView):
         context = super().get_context_data(**kwargs)
         context["available_quantity"] = self.object.total_quantity - self.object.booked_quantity
         return context
+
 
 class CreateStorage(generic.CreateView):
     model = Storage
@@ -119,6 +132,7 @@ class StorageUpdate(generic.UpdateView):
     
     def get_success_url(self) -> str:
         return reverse("center:storage-list", kwargs={"center_id": self.get_object().center.id})
+
 
 class StorageDelete(generic.DeleteView):
     model = Storage
