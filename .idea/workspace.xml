@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
-      <change afterPath="$PROJECT_DIR$/mysite/mysite/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/template/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/template/mysite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/template/mysite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/templates/center/center-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/center/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\studing\programming\Django\DjangoProject" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
