@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
-      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/campaign/froms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/froms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/campaign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/templates/campaign-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/campaign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/campaign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/views.py" afterDir="false" />
     </list>

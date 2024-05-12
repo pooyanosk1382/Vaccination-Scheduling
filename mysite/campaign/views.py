@@ -71,7 +71,7 @@ class SlotDetailView(LoginRequiredMixin, generic.DetailView):
     template_name = "campaign/slot-detail.html"
 
 
-class SlotCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
+class SlotCreateView(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageMixin, generic.CreateView):
     model = Slot
     form_class = SlotForm
     template_name = "campaign/slot-create.html"
@@ -83,7 +83,48 @@ class SlotCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.Create
 
     def get_initial(self):
         initial = super().get_initial()
-        initial["campaign"] = Campaign.objects.get(id=self.kwargs["campaign"])
+        initial["campaign"] = Campaign.objects.get(id=self.kwargs["campaign_id"])
+        return initial
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs["campaign_id"] = self.kwargs["campaign_id"]
+        return kwargs
+
+
+class SlotUpdateView(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageMixin, generic.UpdateView):
+    model = Slot
+    form_class = SlotForm
+    permission_required = ("campaign.change_slot",)
+    template_name = "campaign/slot-update.html"
+    success_message = "Slot updated successfully"
+
+    def get_success_url(self):
+        return reverse_lazy("campaign:slot-list", kwargs={"campaign_id": self.kwargs["campaign_id"]})
+
+    def get_initial(self):
+        initial = super().get_initial()
+        initial["campaign"] = Campaign.objects.get(id=self.kwargs["campaign_id"])
+        return initial
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs["campaign_id"] = self.kwargs["campaign_id"]
+        return kwargs
+
+
+class SlotDeleteView(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageMixin, generic.DeleteView):
+    model = Slot
+    permission_required = ("campaign.delete_slot",)
+    template_name = "campaign/slot-delete.html"
+    success_message = "Slot deleted successfully"
+
+    def get_success_url(self):
+        return reverse_lazy("campaign:slot-list", kwargs={"campaign_id": self.get_object().campaign.id})
+
+    def get_initial(self):
+        initial = super().get_initial()
+        initial["campaign"] = Campaign.objects.get(id=self.kwargs["campaign_id"])
         return initial
 
     def get_form_kwargs(self):

@@ -12,4 +12,6 @@ urlpatterns = [
     path("<int:campaign_id>/ slot/", views.SlotListView.as_view(), name="slot-list"),
     path("slot/<int:pk>/", views.SlotDetailView.as_view(), name="slot-detail"),
     path("<int:campaign_id>/slot/create/", views.SlotDetailView.as_view(), name="slot-create"),
+    path("<int:campaign_id>/slot/update/<int:pk>", views.SlotUpdateView.as_view(), name="slot-update"),
+    path("slot/delete/<int:pk>", views.SlotDeleteView.as_view(), name="slot-delete"),
 ]
