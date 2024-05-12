@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from campaign.models import Campaign, Slot
-from vacciation.models import Vaccination
+from vaccination.models import Vaccination
 from campaign.forms import CampaignForm, SlotForm
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
