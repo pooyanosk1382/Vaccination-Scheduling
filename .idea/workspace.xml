@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/froms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/campaign-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/campaign-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/campaign-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/campaign-update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/campaign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/vaccine/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccine/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
