@@ -9,4 +9,7 @@ urlpatterns = [
     path("<create/>", views.CampaignCreateView.as_view(), name="campaign-create"),
     path("<update/<int:pk>", views.CampaignCreateView.as_view(), name="campaign-update"),
     path("<delete/<int:pk>", views.CampaignDeleteView.as_view(), name="campaign-delete"),
+    path("<int:campaign_id>/ slot/", views.SlotListView.as_view(), name="slot-list"),
+    path("slot/<int:pk>/", views.SlotDetailView.as_view(), name="slot-detail"),
+    path("<int:campaign_id>/slot/create/", views.SlotDetailView.as_view(), name="slot-create"),
 ]
