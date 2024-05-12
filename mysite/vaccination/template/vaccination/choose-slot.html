@@ -28,7 +28,7 @@
         <td>{{ slot.end_time }}</td>
         <td>{{ slot.max_capacity }}</td>
         <td>{{ slot.reserved }}</td>
-        <td><a href="#" class="btn-sm btn-outline-primary">Choose</a></td>
+        <td><a href="{% url 'vaccination:confirm-vaccination' slot.campaign.id slot.id %}" class="btn-sm btn-outline-primary">Choose</a></td>
       </tr>
       {% endfor %}
     </tbody>
