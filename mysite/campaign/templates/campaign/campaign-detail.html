@@ -1,6 +1,6 @@
 {% extends 'mysite/base.html' %}
 
-{% block title %}
+{% block title %} 
     <title>Campaign Details</title>
 {% endblock title %}
 
@@ -68,6 +68,10 @@
 
       <div class="row mb-1 btn-container">
         <div class="col-12">
+          <button class="btn btn-sm btn-dark m-1">
+            <a href="#"><i class="fas fa-eye"></i> View Registrations</a>
+          </button>
+
           <button class="btn btn-sm btn-primary m-1">
             <a href="{% url 'campaign:slot-list' object.id %}"><i class="fas fa-eye"></i> View Slots</a>
           </button>

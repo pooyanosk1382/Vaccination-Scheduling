@@ -20,8 +20,8 @@ def generate_pdf(context):
         "paraStyle", fontSize=14, leading=20, firstLineIndent=25
     )
     para = Paragraph(context["content"], para_style)
-    para.wrapOn(p, 500, 200)
-    para.drawOn(p, 40, 600)
+    para.wrapOn(p, 500, 200)  
+    para.drawOn(p, 40, 600) 
     p.showPage()
     p.save()
 

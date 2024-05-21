@@ -10,8 +10,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required, permission_required
 from django.utils.decorators import method_decorator
 
-
-@method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name="dispatch")
 class VaccineList(View):
     def get(self, request):
         vaccine_list = Vaccine.objects.all().order_by("name")
@@ -23,8 +22,7 @@ class VaccineList(View):
         }
         return render(request, "vaccine/vaccine-list.html", context)
 
-
-@method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name="dispatch")
 class VaccineDetail(View):
     def get(self, request, id):
         try:
@@ -37,9 +35,8 @@ class VaccineDetail(View):
         }
         return render(request, "vaccine/vaccine-detail.html", context)
 
-
-@method_decorator(login_required, name='dispatch')
-@method_decorator(permission_required("vaccine.add_vaccine", raise_exception=True), name='dispatch')
+@method_decorator(login_required, name="dispatch")
+@method_decorator(permission_required("vaccine.add_vaccine", raise_exception=True), name="dispatch")
 class CreateVaccine(View):
     form_class = VaccineForm
     template_name = "vaccine/create-vaccine.html"
@@ -59,9 +56,8 @@ class CreateVaccine(View):
         messages.error(request, "Please enter valid data")
         return render(request, self.template_name, {"form": form})
 
-
-@method_decorator(login_required, name='dispatch')
-@method_decorator(permission_required("vaccine.change_vaccine", raise_exception=True), name='dispatch')
+@method_decorator(login_required, name="dispatch")
+@method_decorator(permission_required("vaccine.change_vaccine", raise_exception=True), name="dispatch")
 class UpdateVaccine(View):
     form_class = VaccineForm
     template_name = "vaccine/update-vaccine.html"
@@ -83,9 +79,8 @@ class UpdateVaccine(View):
         messages.error(request, "Please enter valid data")
         return render(request, self.template_name, {"form": form})
 
-
-@method_decorator(login_required, name='dispatch')
-@method_decorator(permission_required("vaccine.delete_vaccine", raise_exception=True), name='dispatch')
+@method_decorator(login_required, name="dispatch")
+@method_decorator(permission_required("vaccine.delete_vaccine", raise_exception=True), name="dispatch")
 class DeleteVaccine(View):
     template_name = "vaccine/delete-vaccine.html"
 

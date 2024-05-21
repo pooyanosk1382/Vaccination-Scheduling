@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1244c220-db3a-4534-a493-636649063e0b" name="Changes" comment="modeling">
-      <change afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/campaign-update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/campaign/templates/slot-update.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/campaign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/campaign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/campaign/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/center/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/media/profileImage/photo_Rdzhlqn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/user/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/user/templates/user/profile-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/templates/user/profile-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccination/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccination/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/choose-campaign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/choose-slot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/choose-vaccine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/confirm-vaccination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/vaccination-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/template/vaccination/vaccination-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccination/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccination/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccination/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccination/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/vaccine/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/vaccine/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,13 +74,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studing\programming\Django\DjangoProject" />
@@ -69,6 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -87,6 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715163374193</updated>
+      <workItem from="1715665352206" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="modeling">
       <created>1715166262943</created>
@@ -104,6 +132,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

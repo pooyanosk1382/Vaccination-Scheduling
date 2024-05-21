@@ -11,8 +11,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 
-
-@login_required()
+@login_required
 def center_list(request):
     objects = Center.objects.all().order_by("name")
     paginator = Paginator(objects, 2)
@@ -23,8 +22,7 @@ def center_list(request):
     }
     return render(request, "center/center-list.html", context)
 
-
-@login_required()
+@login_required
 def center_detail(request, id):
     object = Center.objects.get(id=id)
     context = {
@@ -32,8 +30,7 @@ def center_detail(request, id):
     }
     return render(request, "center/center-detail.html", context)
 
-
-@login_required()
+@login_required
 @permission_required("center.add_center", raise_exception=True)
 def create_center(request):
     if request.method == "POST":
@@ -50,9 +47,8 @@ def create_center(request):
     }
     return render(request, "center/create-center.html", context)
 
-
-@login_required()
-@permission_required("center.add_center", raise_exception=True)
+@login_required
+@permission_required("center.change_center", raise_exception=True)
 def update_center(request, id):
     try:
         center = Center.objects.get(id=id)
@@ -73,8 +69,7 @@ def update_center(request, id):
     }
     return render(request, "center/update-center.html", context)
 
-
-@login_required()
+@login_required
 @permission_required("center.delete_center", raise_exception=True)
 def delete_center(request, id):
     try:
@@ -107,7 +102,6 @@ class StorageList(LoginRequiredMixin, generic.ListView):
         context["center_id"] = self.kwargs["center_id"]
         return context
 
-
 class StorageDetail(LoginRequiredMixin, generic.DetailView):
     model = Storage
     template_name = "storage/storage-detail.html"
@@ -117,13 +111,12 @@ class StorageDetail(LoginRequiredMixin, generic.DetailView):
         context["available_quantity"] = self.object.total_quantity - self.object.booked_quantity
         return context
 
-
 class CreateStorage(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageMixin, generic.CreateView):
     model = Storage
     form_class = StorageForm
     template_name = "storage/storage-create.html"
     success_message = "Storage Created Successfully"
-    permission_required = ("center.add_storage", )
+    permission_required = ("center.add_storage",)
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()
@@ -144,7 +137,7 @@ class StorageUpdate(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageM
     form_class = StorageForm
     template_name = "storage/storage-update.html"
     success_message = "Storage Updated Successfully"
-    permission_required = ("center.change_storage", )
+    permission_required = ("center.change_storage",)
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()
@@ -154,12 +147,11 @@ class StorageUpdate(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageM
     def get_success_url(self) -> str:
         return reverse("center:storage-list", kwargs={"center_id": self.get_object().center.id})
 
-
 class StorageDelete(LoginRequiredMixin, PermissionRequiredMixin, SuccessMessageMixin, generic.DeleteView):
     model = Storage
     template_name = "storage/storage-delete.html"
     success_message = "Storage Deleted Successfully"
-    permission_required = ("center.delete_storage", )
+    permission_required = ("center.delete_storage",)
 
     def get_success_url(self) -> str:
         return reverse("center:storage-list", kwargs={"center_id": self.get_object().center.id})

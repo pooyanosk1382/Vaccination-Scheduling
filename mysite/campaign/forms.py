@@ -1,7 +1,6 @@
 from django.forms import ModelForm
 from campaign.models import Campaign, Slot
 
-
 class CampaignForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(CampaignForm, self).__init__(*args, **kwargs)
@@ -11,7 +10,6 @@ class CampaignForm(ModelForm):
     class Meta:
         model = Campaign
         fields = "__all__"
-
 
 class SlotForm(ModelForm):
     def __init__(self, campaign_id, *args, **kwargs):
@@ -23,5 +21,5 @@ class SlotForm(ModelForm):
             visible.field.widget.attrs["class"] = "form-control"
 
     class Meta:
-        model = Campaign
+        model = Slot
         fields = "__all__"
